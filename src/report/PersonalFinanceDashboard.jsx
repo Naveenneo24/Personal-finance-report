@@ -21,7 +21,7 @@ const PersonalFinanceDashboard = ({totalExpenses,expenses}) => {
             });
 
             // Add total expenses
-            doc.text(`Total Expenses: $${totalExpenses}`, 14, doc.autoTable.previous.finalY + 10);
+            doc.text(`Total Expenses: ${totalExpenses}`, 14, doc.autoTable.previous.finalY + 10);
 
             // Save the PDF
             doc.save('personal_finance_report.pdf');
